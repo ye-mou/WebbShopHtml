@@ -11,7 +11,6 @@ The webshop features a range of products, expert profiles, and a contact form.
 - Demo
 - Features
 - Technologies
-- Usage
 
 ## Demo
 
