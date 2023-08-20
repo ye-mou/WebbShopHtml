@@ -42,8 +42,15 @@
                 <a class="nav-link" href="/Varumärken">Varumärken</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Kontakt">Kontakt</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                  >Kontakt</a
+                >
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="/OmOss">Om oss</a>
               </li>
@@ -158,6 +165,50 @@
       <a href="#">Om oss</a>
       <a href="#">Köpvillkor</a>
       <a href="#">Integritetspolicy</a>
+    </div>
+
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Kontakta Oss</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Namn</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-post</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Meddelande</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Skicka</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
